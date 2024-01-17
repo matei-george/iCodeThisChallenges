@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+:root {
+   --page-bg: #def3f2;
+   --container: #a4e3e7;
+   --container-bg: #f4fcff;
+   --main-txt-clr: #242f2f;
+   --sec-txt-clr: #686d6d;
+   --bottom-section: #def3f2;
+   --pause: #01bfa8;
+   --stop: #d40100;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   height: 100%;
+   background: radial-gradient(var(--container), var(--page-bg));
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   display: grid;
+   place-content: center;
+}
+
+img {
+   width: 20px;
+   height: 20px;
+}
+
+.main-container {
+   width: 400px;
+   height: 400px;
+   background-color: var(--container-bg);
+   display: grid;
+   grid-template-rows: 50px 1fr 50px;
+}
+.top-section {
+   justify-self: end;
+   padding: 16px;
+   align-self: center;
+}
+
+.top-section img:first-of-type {
+   position: relative;
+   top: 6px;
+   right: 8px;
+}
+
+.mid-section {
+   justify-self: center;
+   align-self: center;
+}
+.mid__recording {
+   color: var(--sec-txt-clr);
+   font-size: 14px;
+   text-align: center;
+}
+.mid__time {
+   font-size: 2rem;
+   margin-bottom: 48px;
+   text-align: center;
+}
+.pause img,
+.stop img {
+   width: 30px;
+   height: 30px;
+}
+.pause p {
+   color: var(--pause);
+}
+.stop p {
+   color: var(--stop);
+}
+.play-pause {
+   display: flex;
+   gap: 48px;
+}
+.pause,
+.stop {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+.bottom-section {
+   grid-column: 1/-1;
+   background-color: var(--bottom-section);
+   display: flex;
+   justify-content: space-between;
+   padding: 12px;
+}
+
+.draw {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+.draw p {
+   color: var(--sec-txt-clr);
+   font-weight: 500;
+}
+
+.zoom {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.zoom p {
+   font-size: 12px;
+}
+.controls {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}

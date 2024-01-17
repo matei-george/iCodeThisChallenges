@@ -111,7 +111,9 @@ img {
 }
 
 .zoom p {
+   color: var(--sec-txt-clr);
    font-size: 12px;
+   letter-spacing: 1.5px;
 }
 .controls {
    display: flex;

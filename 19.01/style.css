@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+   --page-bg: #eef3ee;
+   --card-topbar: #dd6e51;
+   --card-item: #f48266;
+   --text-clr: #ffffff;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,
+body {
+   background-color: var(--page-bg);
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   height: 100%;
+   display: grid;
+   place-content: center;
+}
+
+.main-container {
+   background-color: var(--card-item);
+   width: 400px;
+   height: 600px;
+   border-radius: 16px;
+   box-shadow: 0 0 50px var(--card-topbar);
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 60px 1fr;
+}
+
+.topbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--card-topbar);
+   border-top-right-radius: 16px;
+   border-top-left-radius: 16px;
+   padding: 24px;
+   color: var(--text-clr);
+}
+.topbar p {
+   font-size: 20px;
+}
+.topbar span {
+   font-variation-settings: "wght" 300;
+   color: #ffffffd5;
+   transform: scale(1.15);
+}
+img {
+   width: 85px;
+   height: 85px;
+   border-radius: 12px;
+}
+.items-container {
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+}
+
+.item {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   border-bottom: 2px solid var(--card-topbar);
+}
+.item:hover {
+   background-color: var(--card-topbar);
+   border-color: var(--card-item);
+   cursor: pointer;
+}
+.item:last-of-type {
+   border-bottom: none;
+   border-bottom-left-radius: 16px;
+   border-bottom-right-radius: 16px;
+}
+.item__about {
+   color: var(--text-clr);
+   font-size: 14px;
+}
+.about__tags {
+   margin-top: 12px;
+   display: flex;
+   gap: 6px;
+   align-items: flex-end;
+}
+.about__tags p {
+   font-size: 12px;
+   border: 1px solid var(--text-clr);
+   padding: 4px;
+   border-radius: 16px;
+}
+.item__about span {
+   font-variation-settings: "FILL" 1;
+}
+.item__where {
+   color: var(--text-clr);
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: center;
+   gap: 24px;
+}
+.item__where span {
+   transform: scale(2);
+}

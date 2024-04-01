@@ -1,0 +1,62 @@
+:root {
+   --selected: #ea4079;
+   --more-selected: #e22061;
+   --booked: #c9d8df;
+   --available: #6a93a6;
+   --text: #fdfefc;
+}
+body {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #c9d8df;
+}
+.main {
+   background-color: #fdfefc;
+}
+.main-container {
+   height: 80vh;
+   width: 80vw;
+}
+.image-container {
+   position: relative;
+   background: url("res/images/gas.jpg") top/cover no-repeat;
+}
+.asd {
+   backdrop-filter: contrast(0.3);
+}
+.icon {
+   filter: invert();
+}
+.available {
+   color: var(--available);
+}
+.booked {
+   color: var(--booked);
+}
+.selected {
+   color: var(--selected);
+}
+
+.screen {
+   height: 4px;
+   background-color: var(--available);
+   width: 90%;
+   margin: auto;
+}
+
+.summary {
+   background-color: var(--more-selected);
+}
+.price {
+   background-color: var(--selected);
+}
+.column {
+   position: relative;
+}
+.cta-button {
+   position: absolute;
+   top: 40px;
+   right: 10px;
+}

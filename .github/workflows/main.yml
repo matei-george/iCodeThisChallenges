@@ -20,6 +20,8 @@ jobs:
         run: |
           mkdir -p "$(date +'%d-%m')"
           git add "$(date +'%d-%m')"
-          git commit -m "chore: create iCodeThis folder for $(date +'%d-%m')"
-          git push
+          # Check if there are changes to commit
+          git diff --cached --quiet || git commit -m "chore: create iCodeThis folder for $(date +'%d-%m')"
+          # Check if commit was made successfully before pushing
+          [ $? -eq 0 ] && git push
       

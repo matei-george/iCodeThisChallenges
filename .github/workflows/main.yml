@@ -12,6 +12,10 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
+      - name: Authentication
+        run: |
+          git config --global user.email "mateimurarasu@yahoo.com"
+          git config --global user.name "matei-bot"
       - name: Create date folder
         run: |
           mkdir -p "$(date +'%d-%m')"

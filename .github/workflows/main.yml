@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  create-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Create date folder
+        run: |
+          mkdir -p "$(date +'%d-%m')"
+          git add "$(date +'%d-%m')"
+          git commit -m "chore: create iCodeThis folder for $(date +'%d-%m')"
+          git push
+      

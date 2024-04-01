@@ -1,4 +1,4 @@
-!#usr/bin
+#!/usr/bin/env bash
 # Preluam data curenta in formaul DD-MM
 current_date=$(date +'%d.%m')
 # Cream fisierele

@@ -1,0 +1,34 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  create-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Authentication
+        run: |
+          git config --global user.email "mateimurarasu@yahoo.com"
+          git config --global user.name "matei-bot"
+      - name: Create date folder
+        run: |
+           current_date=$(date +'%d-%m')
+          mkdir -p "$current_date"
+          cd "$current_date"
+          # Create empty index.html
+          touch index.html
+          # Create empty styles.css
+          touch styles.css
+          # Create empty res folder
+          mkdir -p res
+          # Check if there are changes to commit
+          git add .
+          git diff --cached --quiet || git commit -m "chore: create folder with empty files for $current_date"
+          [ $? -eq 0 ] && git push https://github.com/${{ github.repository }} HEAD:main
+      

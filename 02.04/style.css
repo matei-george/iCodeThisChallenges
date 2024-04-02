@@ -1,0 +1,50 @@
+:root {
+   --page-bg: #f2f8fd;
+   --card-border: #dde6fa;
+   --input: #dde6fa86;
+   --card-bg-1: #607bdb;
+   --card-bg-2: #2143be;
+}
+
+body {
+   height: 100vh;
+   background-color: var(--page-bg);
+}
+
+main.container {
+   height: 100vh;
+}
+
+.social-login {
+   border: 22px solid var(--card-border);
+   position: relative;
+   background: linear-gradient(45deg, var(--card-bg-1), var(--card-bg-2));
+   width: 750px;
+}
+
+.user-input__email {
+   background-color: transparent;
+   border: none;
+   outline: none;
+}
+
+.user-input__email::placeholder {
+   color: var(--page-bg);
+}
+
+.user-container {
+   background-color: var(--input);
+}
+
+.login-image {
+}
+
+.col > img {
+   width: 60px;
+}
+
+.login-pictures {
+   position: absolute;
+   bottom: -40px;
+   left: 140px;
+}

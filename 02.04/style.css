@@ -36,9 +36,6 @@ main.container {
    background-color: var(--input);
 }
 
-.login-image {
-}
-
 .col > img {
    width: 60px;
 }

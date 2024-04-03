@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=initial-scale, initial-scale=1.0" />
+      <title>Mobile Menu</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+    <main class="container d-flex justify-content-center align-items-center card-container">
+        <div class="container col-4 shadow rounded-4">
+            <!-- top part -->
+            <div class="row mb-4">
+                <div class="col px-4 py-4 top-section d-flex rounded-4 shadow align-items-center gap-4">
+                    <img src="res/images/download.jpeg" alt="profile-picture" class="top-section__pp rounded-circle border border-5 ">
+                    <div class="col">
+                        <h5 class="text-white fw-normal m-0">Dr.Jessica James</h5>
+                        <p class="text-white-50 m-0">Dermathologist</p>
+                    </div>
+                </div>
+            </div>
+            <!-- buttons -->
+            <div class="row py-4">
+                <div class="col d-flex justify-content-center">
+                    <button class="btn cta-button text-white px-4 py-2 shadow">
+                        <i class="bi bi-plus-lg plus"></i>
+                        Add Branch</button>
+            </div>
+            </div>
+            <!-- middle part-->
+            <div class="container px-4 py-4">
+                <div class="row">
+                    <div class="col d-flex align-items-center gap-4 mb-5">
+                        <i class="bi bi-pie-chart h5 mb-0"></i>
+                        <p class="m-0 fs-5">Dashboard</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex align-items-center gap-4 mb-5">
+                        <i class="bi bi-window-plus h5 mb-0"></i>
+                        <p class="m-0 fs-5">Post sessions</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex align-items-center gap-4 mb-5">
+                        <i class="bi bi-lightning-fill h5 mb-0"></i>
+                        <p class="m-0 fs-5">Live sessions</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex align-items-center gap-4 mb-5">
+                        <i class="bi bi-chat h5 mb-0"></i>
+                        <p class="m-0 fs-5">Messages</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex align-items-center gap-4 mb-4">
+                        <i class="bi bi-heart h5 mb-0"></i>
+                        <p class="m-0 fs-5">Locum library</p>
+                    </div>
+                </div>
+            </div>
+            <!-- lower part -->
+            <i class="bi bi-x-lg h2 close-x"></i>
+            <div class="selected"></div>
+        </div>
+    </main>
+</html>

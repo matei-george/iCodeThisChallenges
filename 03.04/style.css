@@ -1,0 +1,55 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+   --page-bg: #fff;
+   --card-bg: #fff;
+   --accent: #6181d6;
+}
+
+body {
+   background-color: var(--page-bg);
+}
+
+.card-container {
+   background-color: var(--card-bg);
+   height: 600px;
+}
+
+.card-container > div {
+   position: relative;
+}
+.top-section,
+.cta-button {
+   background-color: var(--accent);
+}
+
+.top-section__pp {
+   height: 75px;
+   border-color: #ffffff23 !important;
+}
+
+i::before {
+   color: #919191b2;
+}
+
+i.plus::before {
+   color: var(--page-bg);
+}
+.bi-lightning-fill::before,
+.bi-lightning-fill + p {
+   color: var(--accent);
+}
+.close-x {
+   display: inline-block;
+   position: absolute;
+   bottom: 10px;
+   right: 30px;
+}
+.selected {
+   background-color: var(--accent);
+   height: 60px;
+   width: 5px;
+   position: absolute;
+   left: 0;
+   bottom: 190px;
+}

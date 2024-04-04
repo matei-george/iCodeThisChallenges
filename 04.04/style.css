@@ -1,0 +1,48 @@
+:root {
+   --page-bg: #eff2fa;
+   --tag-bg: #1b184c;
+   --text-clr: #1b184c;
+   --btn-bg: #4787ea;
+   --btn-border: #1c59eb;
+}
+body {
+   background-color: var(--page-bg);
+}
+main.container {
+   height: 100vh;
+}
+.shipping-badge {
+   background-color: var(--tag-bg);
+}
+
+h4,
+h6,
+h3 {
+   color: var(--text-clr);
+}
+h6 {
+   text-decoration: line-through;
+}
+
+.stock-info,
+h6 {
+   font-size: 14px;
+}
+
+.add-to-cart,
+.add-to-cart:hover {
+   background-color: var(--btn-bg);
+   color: var(--page-bg);
+   border-bottom: 7px solid var(--btn-border);
+   border-radius: 12px;
+}
+
+.add-to-cart:active {
+   border: none;
+}
+
+.circle {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+}

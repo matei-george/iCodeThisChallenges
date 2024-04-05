@@ -11,14 +11,12 @@ body {
 }
 
 .card-container {
-   background-color: var(--card-bg);
    height: 100vh;
 }
 
 .card-container > div {
    position: relative;
 }
-.top-section,
 .cta-button {
    background-color: var(--accent);
 }
@@ -61,4 +59,21 @@ i.plus::before {
    position: absolute;
    left: 0;
    bottom: 190px;
+}
+
+.some-card {
+   position: relative;
+   overflow: hidden;
+}
+
+.circle {
+   z-index: -1;
+   position: absolute;
+   width: 600px;
+   height: 200px;
+   border-radius: 10px 0px 0px 59px;
+   top: -80px;
+   left: -20px;
+   background: linear-gradient(to right, #8b9fd9, #2250cf);
+   transform: rotate(-15deg);
 }

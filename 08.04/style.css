@@ -1,0 +1,29 @@
+:root {
+   --page-bg: #ef89b0;
+   --card-bg: #ffffff;
+   --cta-gr-1: #e66cd0;
+   --cta-gr-2: #fe6ba4;
+}
+
+body {
+   background-color: var(--page-bg);
+   height: 100vh;
+}
+
+.main-container {
+   background-color: var(--card-bg);
+}
+
+.image {
+   width: 60px;
+}
+
+.cta-button {
+   background: linear-gradient(to right, var(--cta-gr-1), var(--cta-gr-2));
+   transition: all 300ms;
+}
+
+.cta-button:hover {
+   transform: scale(1.1);
+   box-shadow: 0 10px 20px 10px rgba(50, 50, 50, 0.175);
+}

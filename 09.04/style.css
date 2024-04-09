@@ -1,0 +1,49 @@
+:root {
+   --page-bg: #eef0f2;
+   --card-bg: #ffffff;
+   --accent-1: #d89e62;
+   --accent-2: #232e4d;
+}
+
+body {
+   height: 100vh;
+}
+
+.main-container {
+   height: 100vh;
+   background-color: var(--page-bg);
+}
+
+.card-container {
+   background-color: var(--card-bg);
+   position: relative;
+}
+
+.close-icon {
+   position: absolute;
+   right: 30px;
+   top: 20px;
+   transform: scale(1.25);
+}
+
+.close-icon::before {
+   color: darkgray;
+}
+
+.close-icon:hover {
+   cursor: pointer;
+}
+
+p:last-of-type {
+   color: var(--accent-1);
+}
+
+.cta-btn {
+   background-color: var(--accent-2);
+   color: var(--card-bg);
+}
+
+.cta-btn:hover {
+   color: var(--accent-2);
+   background-color: var(--card-bg);
+}

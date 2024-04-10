@@ -1,0 +1,35 @@
+:root {
+   --page-bg: #e0e0e0;
+   --card-bg: #fff9f2;
+   --accent-1: #14143b;
+   --accent-2: #f37a35;
+}
+
+body {
+   background-color: var(--page-bg);
+}
+
+.main-container {
+   height: 100vh;
+}
+
+.profile-card {
+   background-color: var(--card-bg);
+}
+
+.profile-picture {
+   width: 70px;
+}
+
+.progress {
+   height: 10px;
+   width: 300px;
+}
+.progress-bar {
+   background-color: var(--accent-2);
+}
+
+.button {
+   background-color: var(--accent-1);
+   color: var(--card-bg);
+}

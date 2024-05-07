@@ -7,3 +7,52 @@
    --cta-2: #adf1f5;
    --cta-3: #ffddb7;
 }
+
+body {
+   background-color: var(--page-bg);
+   height: 100vh;
+}
+/* The circles */
+.circle {
+   width: 400px;
+   height: 400px;
+   border-radius: 50%;
+   filter: blur(100px);
+   position: absolute;
+   z-index: -1;
+}
+.bg-circle-1 {
+   background-color: var(--cta-1);
+   left: 30px;
+   bottom: 0;
+}
+.bg-circle-2 {
+   background-color: var(--cta-2);
+   right: 650px;
+   top: 40px;
+}
+.bg-circle-3 {
+   background-color: var(--cta-3);
+   right: 70px;
+   top: 40px;
+}
+
+/* Pricing container */
+.pricing-container {
+   background-color: #ffffff6f;
+   border: 12px solid var(--page-bg);
+   width: 70vw;
+}
+
+/* Pricing container buttons */
+.cta-1 {
+   background-color: var(--cta-1);
+}
+
+.cta-2 {
+   background-color: var(--cta-2);
+}
+
+.cta-3 {
+   background-color: var(--cta-3);
+}

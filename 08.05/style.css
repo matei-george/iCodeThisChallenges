@@ -1,0 +1,23 @@
+:root {
+   --page_bg: #f5f7f9;
+   --accent: #182951;
+}
+
+body {
+   height: 100vh;
+   background-color: var(--page_bg);
+}
+.field-container {
+   background-color: white;
+}
+.bi-eye-slash:hover {
+   cursor: pointer;
+}
+.continue-btn {
+   background-color: var(--accent);
+   color: #fff;
+}
+
+.reset-pw {
+   color: var(--accent);
+}

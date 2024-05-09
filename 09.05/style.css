@@ -1,0 +1,37 @@
+:root {
+   --page-bg: #f4f9ff;
+   --form-shadow: #e8f1fd;
+   --form-bg: #fff;
+   --form-accent: #1e2c4b;
+   --form-facebook: #4968ad;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: var(--page-bg);
+   height: 100vh;
+}
+
+.signup-bg {
+   background-color: var(--form-shadow);
+}
+
+.signup-container {
+   background-color: var(--form-bg);
+}
+
+.facebook-btn {
+   background-color: var(--form-facebook);
+   color: var(--form-bg);
+}
+.cta-button {
+   background-color: var(--form-accent);
+   color: var(--form-bg);
+}
+.join-text {
+   font-size: 0.75rem;
+}

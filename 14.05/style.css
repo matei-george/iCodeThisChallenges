@@ -3,3 +3,17 @@
    --progress-bar: #0be4c7;
    --accent: #f60797;
 }
+
+body {
+   background-color: var(--page-bg);
+   height: 100vh;
+}
+.bi-three-dots:before {
+   color: white;
+}
+.project-card {
+   border-top: 6px solid var(--accent);
+}
+.progress-bar {
+   background-color: var(--progress-bar);
+}
